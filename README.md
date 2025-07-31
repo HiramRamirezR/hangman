@@ -21,7 +21,7 @@ This is a simple yet fun implementation of the classic Hangman word-guessing gam
 3.  **(Optional) Customize the words:** You can edit the `words.txt` file to add or remove words. Make sure to keep one word per line.
 4.  **Run the game:**
     ```bash
-    python ahorcado.py
+    python hangman.py
     ```
 5.  The game will start, and you will be prompted to enter a letter.
 6.  Guess the word before you run out of attempts!
