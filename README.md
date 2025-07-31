@@ -36,8 +36,8 @@ This is a simple yet fun implementation of the classic Hangman word-guessing gam
 
 The project is organized into the following files:
 
-*   `ahorcado.py`: The main script containing the core game logic.
-*   `hangman_art.py`: A module that stores the ASCII art for the hangman.
+*   `hangman.py`: The main script containing the core game logic.
+*   `ascii_man.py`: A module that stores the ASCII art for the hangman.
 *   `words.txt`: A text file containing the list of words for the game.
 
 This structure separates the game's data (words), presentation (art), and logic, making it easier to maintain and expand.
