@@ -4,7 +4,7 @@ A classic command-line Hangman game implemented in Python.
 
 ## Description
 
-This is a simple yet fun implementation of the classic Hangman word-guessing game. The player tries to guess a secret word, letter by letter, before the hangman is fully drawn. The game randomly selects a word from a predefined list, and the player has a limited number of attempts to guess it correctly.
+This is a simple yet fun implementation of the classic Hangman word-guessing game. The player tries to guess a secret word, letter by letter, before the hangman is fully drawn. The game randomly selects a word from an external `words.txt` file, and the player has a limited number of attempts to guess it correctly.
 
 ## How to Play
 
@@ -16,25 +16,31 @@ This is a simple yet fun implementation of the classic Hangman word-guessing gam
     ```bash
     cd your-repository-name
     ```
-
-3.  **Run the game:**
+3.  **(Optional) Customize the words:** You can edit the `words.txt` file to add or remove words. Make sure to keep one word per line.
+4.  **Run the game:**
     ```bash
     python ahorcado.py
     ```
-4.  The game will start, and you will be prompted to enter a letter.
-5.  Guess the word before you run out of attempts!
+5.  The game will start, and you will be prompted to enter a letter.
+6.  Guess the word before you run out of attempts!
 
 ## Features
 
-*   Randomly selected words for endless fun.
-*   Visual feedback with an ASCII art hangman.
-*   Keeps track of remaining attempts.
-*   Prevents guessing the same letter multiple times.
-*   Clear and simple command-line interface.
+*   **Customizable Word Lists:** Easily edit the `words.txt` file to use your own word lists.
+*   **Modular Design:** The code is organized into separate modules for game logic and artwork.
+*   **Visual Feedback:** Classic ASCII art hangman that is drawn progressively.
+*   **Input Validation:** Prevents guessing the same letter multiple times.
+*   **Simple Interface:** A clean and straightforward command-line experience.
 
-## Implementation
+## Project Structure
 
-The game is written in Python and is contained in a single file, `ahorcado.py`. It uses the `random` library to select a word from a predefined list. The core of the game is a `while` loop that continues as long as the player has attempts remaining. Inside the loop, the game prompts the user for a letter, checks if the letter is in the word, and updates the game state accordingly. The hangman is drawn using a list of strings that represent the different stages of the drawing.
+The project is organized into the following files:
+
+*   `ahorcado.py`: The main script containing the core game logic.
+*   `hangman_art.py`: A module that stores the ASCII art for the hangman.
+*   `words.txt`: A text file containing the list of words for the game.
+
+This structure separates the game's data (words), presentation (art), and logic, making it easier to maintain and expand.
 
 ## Contributing
 
