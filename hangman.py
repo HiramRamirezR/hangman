@@ -2,32 +2,18 @@
 # if the letter has already been entered, show an error message
 # start the game with 6 attempts
 
+import words
 import random
+import ascii_man
 
-# list of words
-words = [
-    "gato", "perro", "casa", "flor", "sol", "luna", "mar", "agua", "pato", "río",
-    "nube", "tren", "pan", "luz", "cielo", "amor", "rojo", "azul", "verde", "ratón",
-    "nieve", "rey", "reina", "piedra", "tigre", "pez", "león", "oso", "mono", "arroz",
-    "playa", "juguete", "silla", "mesa", "carro", "ventana", "fruta", "bici", "yogur",
-    "globo", "delfín", "cebra", "goma", "manzana", "pera", "lago", "barco", "zorro",
-    "pájaro", "niño", "niña", "dado", "dedo", "cama", "camión", "ratón", "lápiz",
-    "tierra", "sola", "papel", "cuchara", "bomba", "abeja", "limón", "bota", "rana",
-    "conejo", "caballo", "cabra", "pollo", "grillo", "pluma", "estrella", "sandía",
-    "naranja", "melón", "chicle", "mango", "bailar", "cantar", "saltar", "comer",
-    "leer", "escribir", "parque", "jirafa", "plato", "sopa", "agua", "foca", "sapo",
-    "nido", "caracol", "abeja", "botella", "pelota", "cuadro", "reloj", "zapato",
-    "playa", "helado", "bruja", "banda", "circo"
-]
-
-word = random.choice(words)
+word = random.choice(words.words)
 
 letters = []
 attempts = 6
 spaces = ["_"] * len(word)
 
 print(f"Let's start the game.\nYour word has {len(word)} letters.\n")
-print(person[0])
+print(ascii_man.person[0])
 print(f"{spaces}\n")
 
 
@@ -55,7 +41,7 @@ while attempts > 0:
         print(f"\n-------------------------------------\nThe letter '{letter}' is not in the word.")
         attempts -= 1
 
-    print(person[6 - attempts])
+    print(ascii_man.person[6 - attempts])
     print(f"{spaces}\n")
 
     if "_" not in spaces:
