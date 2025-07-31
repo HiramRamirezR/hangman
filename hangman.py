@@ -2,11 +2,16 @@
 # if the letter has already been entered, show an error message
 # start the game with 6 attempts
 
-import words
 import random
 import ascii_man
 
-word = random.choice(words.words)
+try:
+    with open("words.txt", "r", encoding="utf-8") as file:
+        words = [line.strip() for line in file]
+except FileNotFoundError:
+    print("File not found.")
+
+word = random.choice(words)
 
 letters = []
 attempts = 6
