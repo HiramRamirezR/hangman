@@ -1,5 +1,7 @@
 # Hangman Game
 
+![Hangman Game Demo](demo.gif)
+
 A classic command-line Hangman game implemented in Python.
 
 ## Description
